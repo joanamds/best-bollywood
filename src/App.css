@@ -1,38 +1,125 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Poiret+One&display=swap');
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48;
+  font-size: 30px;
+}
+
+body {
+  background-color: #F5F5FA;
+}
+
+h1 {
+  font-family: 'Poiret One', cursive;
+  padding: 20px;
+  font-size: 45px;
+  color: black;
   text-align: center;
+  font-size: 80px;
+  border-radius: 30px;
+  background-color: rgb(125, 188, 221);
+  padding: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  font-family: 'Baloo 2', cursive;
+  background-color: aliceblue;
+  color: black;
+  margin-bottom: 5px;
+  padding: 20px;
+  text-align: center;
+  width: 400px;
+  border-radius: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.movies-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.movie-card {
+  background-color: #FFEEDE;
+  margin-bottom: 40px;
+  padding: 40px;
+  width: 500px;
   display: flex;
   flex-direction: column;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: rgb(125, 188, 221);
+}
+
+.availability {
+  width: 70px;
+}
+
+.movie-poster {
+  width: 200px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 0 auto;
 }
 
-.App-link {
-  color: #61dafb;
+.poster {
+  width: 200px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.movie-name {
+  font-family: 'Baloo 2', cursive;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  color:rgb(29, 114, 161)
+}
+
+.where-watch {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+button {
+  padding: 15px;
+  border-color: rgb(125, 188, 221);
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: aliceblue;
+}
+
+header {
+  background-image: url('https://i.pinimg.com/736x/21/18/be/2118befcc74243c3dca53499e9f0da68.jpg');
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  background-position: center;
+  align-items: center;
+}
+
+.search-movie {
+  text-align: center;
+  padding: 50px;
+}
+
+input {
+  width: 600px;
+  padding: 10px;
+  border-color: orange;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+
+.input-movie {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  align-items: center;
 }
