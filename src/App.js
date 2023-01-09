@@ -1,15 +1,14 @@
 import React from 'react';
 import Header from './components/Header';
 import MoviesList from './components/MoviesList';
-import './App.css';
 
 class App extends React.Component {
   render() {
     return (
-      <>
+      <div className="bg-slate-300">
       <Header />
       <MoviesList />
-      </>
+      </div>
     );
   }
   
