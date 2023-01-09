@@ -25,13 +25,8 @@ class MoviesList extends React.Component{
 
     return(
       <>
-      <div className="search-movie">
       <div className='input-movie'>
-      
       <input type="text" placeHolder="Pesquise aqui" onChange={ this.handleFilter } />
-      <span class="material-symbols-outlined">
-      search
-      </span></div>
       <h4> O termo pesquisado é: { filterName } </h4>
       </div>
       <div className="movies-list">
