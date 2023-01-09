@@ -1,7 +1,7 @@
 import React from 'react'; 
 import movies from '../data/Movies';
 import MovieCard from './MovieCard';
-
+import { FaSearch } from "react-icons/fa";
 class MoviesList extends React.Component{
   constructor(){
     super(); 
@@ -31,7 +31,8 @@ class MoviesList extends React.Component{
             placeHolder="Pesquise aqui"
             onChange={this.handleFilter}
             className="p-2 w-100 rounded-lg border-4 border-slate-50 outline-none focus:border-blue-500 focus:rounded-lg"
-        />
+          />
+          <FaSearch className="absolute inset-y-44 text-xl text-slate-100"/>
       <h4 className="text-center"> O termo pesquisado é: { filterName } </h4>
       </div>
       <div className="movies-list">
