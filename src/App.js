@@ -5,7 +5,7 @@ import MoviesList from './components/MoviesList';
 class App extends React.Component {
   render() {
     return (
-      <div className="bg-slate-300">
+      <div className="bg-orange-100">
       <Header />
       <MoviesList />
       </div>
