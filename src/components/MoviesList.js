@@ -24,10 +24,15 @@ class MoviesList extends React.Component{
     const filteredMovies = movies.filter((movie) => movie.title.toLowerCase().includes(filterName.toLowerCase()));
 
     return(
-      <>
-      <div className='input-movie'>
-      <input type="text" placeHolder="Pesquise aqui" onChange={ this.handleFilter } />
-      <h4> O termo pesquisado é: { filterName } </h4>
+      <div>
+        <div className="grid place-items-center bg-orange-500 p-5">
+        <input
+            type="text"
+            placeHolder="Pesquise aqui"
+            onChange={this.handleFilter}
+            className="p-2 w-100 rounded-lg border-4 border-slate-50 outline-none focus:border-blue-500 focus:rounded-lg"
+        />
+      <h4 className="text-center"> O termo pesquisado é: { filterName } </h4>
       </div>
       <div className="movies-list">
       { filteredMovies.map((currentMovie) => (
@@ -36,7 +41,7 @@ class MoviesList extends React.Component{
       movie={ currentMovie }
       />)) }
       </div>
-      </>
+      </div>
       );
     }
 }
