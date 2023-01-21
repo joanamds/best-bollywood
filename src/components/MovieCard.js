@@ -8,11 +8,9 @@ class MovieCard extends React.Component {
         const altPoster = `Poster do filme ${ title }`;
         const altLogo = `O filme está disponível em: ${ stream }`;
         return(
-            <div className="movie-card">
-                <div className="movie-poster">
-                    <img className="poster" src={ poster } alt={ altPoster } />
-                </div>
-                <p className="movie-name">
+            <div className="bg-white flex-col px-16 py-12 rounded-2xl shadow-lg items-center justify-center w-100 mt-20">
+                <img className="poster" src={ poster } alt={ altPoster } />
+                <p className="mb-10 mt-10">
                     { title }
                 </p>
                 <p className="release-year">
@@ -29,7 +27,7 @@ class MovieCard extends React.Component {
                 </p>
                 <div className="where-watch">
                     <p>Onde assistir:</p>
-                    <img className="availability" src={ logoUrl } alt={ altLogo }/>
+                    <img className="availability" src={ logoUrl } alt={ altLogo } width="50"/>
                     <a href={watchNow} target="_blank" rel="noopener noreferrer"><button pointer>Assistir agora!</button></a>
                 </div>
                 
