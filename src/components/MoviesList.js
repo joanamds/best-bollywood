@@ -45,7 +45,7 @@ class MoviesList extends React.Component{
             </form>
       <h4 className="text-center"> O termo pesquisado é: { filterName } </h4>
       </div>
-      <div className="movies-list">
+        <div className="bg-orange-50 grid grid-cols-4 gap-4">
       { filteredMovies.map((currentMovie) => (
       <MovieCard 
       key={ currentMovie.title }
