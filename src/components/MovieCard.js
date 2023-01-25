@@ -6,7 +6,7 @@ class MovieCard extends React.Component {
         const { movie: {title, poster, releaseYear, directedBy, sinopsis, runningTime, watchNow } } = this.props; 
         const altPoster = `Poster do filme ${ title }`;
         return(
-            <div className="bg-white p-12 rounded-2xl shadow-lg mt-20 ml-10 mr-10 mb-20 flex-wrap">
+            <div className="bg-white p-12 rounded-2xl shadow-lg mt-20 ml-10 mr-10 mb-20 flex-wrap w-100">
                 <p className="mb-10 text-center">
                     {title}
                 </p>
@@ -27,7 +27,7 @@ class MovieCard extends React.Component {
                 </p>
                 <div className="flex justify-around mt-10">
                     <a href={watchNow} target="_blank" rel="noopener noreferrer">
-                        <button pointer className="rounded-md bg-black p-5">
+                        <button pointer className="rounded-full bg-black p-5 hover:bg-slate-800 focus:outline-none focus:ring focus:ring-slate-800">
                             <img src="https://www.justwatch.com/appassets/img/logo/JustWatch-logo-large.png" alt="logo justwatch" width="100"/>
                         </button>
                     </a>
