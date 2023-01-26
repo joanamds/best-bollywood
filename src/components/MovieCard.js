@@ -13,18 +13,17 @@ class MovieCard extends React.Component {
                 <div className="flex justify-center">
                     <img className="poster" src={poster} alt={altPoster} width="300"/>
                 </div>
-                {/* <div className="mt-14"> */}
                 <p className="mt-14">
-                    Ano:  { releaseYear }
+                    <strong>Ano:</strong>  { releaseYear }
                 </p>
                 <p className="directed-by">
-                    Direção: { directedBy }
+                    <strong>Direção:</strong> { directedBy }
                 </p>
                 <p className="text">
-                    Sinopse: { sinopsis }
+                    <strong>Sinopse:</strong> { sinopsis }
                 </p>
                 <p className="running-time">
-                    Duração: { runningTime }
+                    <strong>Duração:</strong> { runningTime }
                 </p>
                 <div className="flex justify-around mt-10">
                     <a href={watchNow} target="_blank" rel="noopener noreferrer">
@@ -33,7 +32,6 @@ class MovieCard extends React.Component {
                         </button>
                     </a>
                     </div>
-                {/* </div> */}
             </div>
         );
     }
