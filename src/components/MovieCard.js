@@ -13,7 +13,8 @@ class MovieCard extends React.Component {
                 <div className="flex justify-center">
                     <img className="poster" src={poster} alt={altPoster} width="300"/>
                 </div>
-                <p className="release-year">
+                {/* <div className="mt-14"> */}
+                <p className="mt-14">
                     Ano:  { releaseYear }
                 </p>
                 <p className="directed-by">
@@ -31,7 +32,8 @@ class MovieCard extends React.Component {
                             <img src="https://www.justwatch.com/appassets/img/logo/JustWatch-logo-large.png" alt="logo justwatch" width="100"/>
                         </button>
                     </a>
-                </div>
+                    </div>
+                {/* </div> */}
             </div>
         );
     }
