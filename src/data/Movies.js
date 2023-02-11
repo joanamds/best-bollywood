@@ -4,7 +4,7 @@ const movies = [
     poster: 'https://images.justwatch.com/poster/241790037/s718/dilwale-dulhania-le-jayenge.%7Bformat%7D',
     releaseYear: '1995', 
     directedBy: 'Aditya Chopra',
-    sinopsis: 'Em uma viagem, uma jovem se apaixona por outro rapaz. Porém, o pai dela é contra esta relação.',
+    sinopsis: 'Em uma viagem, uma jovem se apaixona por um rapaz. Porém, o pai dela é contra esta relação.',
     runningTime: '189min',
     watchNow: 'https://www.justwatch.com/br/filme/dilwale-dulhania-le-jayenge',
     },

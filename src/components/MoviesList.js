@@ -1,6 +1,7 @@
 import React from 'react'; 
 import movies from '../data/Movies';
 import MovieCard from './MovieCard';
+
 class MoviesList extends React.Component{
   constructor(){
     super(); 
@@ -45,7 +46,7 @@ class MoviesList extends React.Component{
             </form>
       <h4 className="text-center"> O termo pesquisado é: { filterName } </h4>
       </div>
-        <div className="bg-orange-50 grid grid-cols-3 gap-4">
+        <div className="bg-orange-50 flex flex-wrap justify-evenly">
       { filteredMovies.map((currentMovie) => (
       <MovieCard 
       key={ currentMovie.title }

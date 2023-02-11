@@ -6,9 +6,9 @@ class MovieCard extends React.Component {
         const { movie: {title, poster, releaseYear, directedBy, sinopsis, runningTime, watchNow } } = this.props; 
         const altPoster = `Poster do filme ${ title }`;
         return(
-            <div className="bg-white p-12 rounded-2xl shadow-lg mt-20 ml-10 mr-10 mb-20 flex-wrap w-100">
-                <p className="mb-10 text-center">
-                    {title}
+            <div className="bg-white p-12 rounded-2xl shadow-lg mt-20 flex-wrap w-100">
+                <p className="mb-10 text-center text-xl">
+                    <strong>{title}</strong>
                 </p>
                 <div className="flex justify-center">
                     <img className="poster" src={poster} alt={altPoster} width="300"/>
