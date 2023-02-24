@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/best-bollywood/static/css/main.ec557279.css",
-    "main.js": "/best-bollywood/static/js/main.6a68676a.js",
-    "index.html": "/best-bollywood/index.html",
-    "main.ec557279.css.map": "/best-bollywood/static/css/main.ec557279.css.map",
-    "main.6a68676a.js.map": "/best-bollywood/static/js/main.6a68676a.js.map"
+    "main.css": "/best-indian-movies/static/css/main.ec557279.css",
+    "main.js": "/best-indian-movies/static/js/main.cf85f402.js",
+    "index.html": "/best-indian-movies/index.html",
+    "main.ec557279.css.map": "/best-indian-movies/static/css/main.ec557279.css.map",
+    "main.cf85f402.js.map": "/best-indian-movies/static/js/main.cf85f402.js.map"
   },
   "entrypoints": [
     "static/css/main.ec557279.css",
-    "static/js/main.6a68676a.js"
+    "static/js/main.cf85f402.js"
   ]
 }
